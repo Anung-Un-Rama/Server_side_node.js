@@ -1,1 +1,19 @@
-Here's the start. 
+1. In your own words highlight the differences in functionality and purposes Client-Side and Server-Side code serves in a full-stack web application.
+
+A: Client-side code serves the purpose of running the browser and basically displaying and creating anything that the user would see. Server-side is more behind the curtain in it's function. I like to think of it like working in a fast food restaurant. When you walk up to the cashier to make an order, you see the menu and you interact with the person taking your order. This would be client-side. After you make your order, it is sent to the back kitchen where the request is brought to fruition. 
+
+The cook will look at the request, then, using the ingredients and tools -- almost like a database-- it puts together the components of your request and sends it back to the front where the finalized product is presented (even if it never does look like the picture). 
+
+Client-side, you see more of the finished product, to where with server-side you see the all the ingredients that go into that final product. 
+
+
+2. What explains Nodes' rise in popularity and use? What does "Isomorphic JavaScript programming" mean? Provide some real-world examples not listed in this checkpoint of companies using Node.js.
+
+A: A big reason for its rise in popularity is due to the fact that developers can use one language to do both client and server side work. In a sense, this keeps things DRY as you are using a single language to accomplish most if not all the aspects you need to create a successful web application. 
+
+Isomorphic JS is a way of creating a "hybrid" application that can run on both the client-side and server-side all written in JS. 
+
+
+3. Draw a diagram of a full-stack web application and its key components.
+
+Diagram: https://docs.google.com/drawings/d/1bsV-vY_COf6jnrNBVjYpxx3jz4cUGuOlluNFDmceRbQ/edit?usp=sharing
