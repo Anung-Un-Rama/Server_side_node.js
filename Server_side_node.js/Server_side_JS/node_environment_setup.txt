@@ -1,0 +1,9 @@
+////////EXERCISES////////
+
+1. What is npm and what does it do?
+
+A:
+
+2. What kind of information does package.json hold?
+
+A:
