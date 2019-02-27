@@ -2,8 +2,31 @@
 
 1. What is npm and what does it do?
 
-A:
+A: npm is the Node.js package manager and it allows us to add .json packages to our Node applications. 
 
 2. What kind of information does package.json hold?
 
-A:
+A: It holds how the application is structured. 
+
+3.Second installed .json package:
+
+ {
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "Demo for node.js setup.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jared Smith",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mocha": "^6.0.2",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "demo"
+  ]
+}
