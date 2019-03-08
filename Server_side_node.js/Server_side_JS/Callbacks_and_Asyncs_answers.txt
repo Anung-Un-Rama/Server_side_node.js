@@ -5,30 +5,49 @@
 
 1. What is the difference between readdirSync and readdir?
 
-A:
+A: readdirSync is synchronous which means it execute the program in order. This means that if a part of the program is large and takes a long time it will block the subsequent functions until the running function is finished. 
+
+readdir is asynchronous, meaning that can run in any order. This is helpful for working around blocking, because it will allow the program to run the large function in the background while moving on to the subsequent functions and running them.  
+
 
 2. What is the event loop and how does it handle asynchronous requests?
 
-A:
+A: The event loop is what allows the callback functions in a larger running operation to present the operation once it is finished.
+
+It accomplishes this by sequentially storing a queue of what were prior running and unfinished operations in the order that they finish then processes them. 
+
 
 3. Given the following code, specify whether the program is asynchronous and non-blocking or synchronous and blocking or synchronous and non-blocking.
 
-A:
+A: This looks to be synchronous and blocking, 
+
 
 4. Given the following code, specify whether the program is asynchronous and non-blocking or synchronous and blocking or synchronous and non-blocking.
 
-A:
+A: Asynchronous and non-blocking. 
+
 
 5. In what order will the console.log statements execute in the code below?
 
-A:
+A: I believe it will be C -> A -> B
 
 
 6. setTimeout is a JavaScript function which calls a function after a set amount of milliseconds. Given the following code, explain in what sequence the functions will run and why.
 
-A:
+A: It will log hello first, then friend. This is because it is asynchronous and the second operation can be completed much faster than the first one with the parameters established by the setTimeout function. 
 
 
 7 .Create a function which utilizes a callback. Make sure to add console.log statements to understand when your callback function is called.
 
 Code:
+
+var array = [1, 2, 3, 65, 4];
+
+var secondArrray = [6,6,6];
+
+let printIt = array.forEach(function (item) {
+  secondArrray.push(item);
+  console.log(array);
+});
+
+console.log(secondArrray);
